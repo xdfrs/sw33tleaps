@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to SW33T LEAPS !</title>
+    <link rel="stylesheet" href="brand.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+
+    <div class="sidebar">
+      <header>✦•┈๑⋯ ⋯๑┈•✦</header>
+      <ul>
+         <li><a href="menu.html"><i class="fas fa-qrcode"></i>Brand Menu</a></li>
+        <li><a href="info.html"><i class="fas fa-stream"></i>Brand Information</a></li>
+		<li><a href="owners.html"><i class="fas fa-stream"></i>Owners</a></li>
+      </ul>
+    </div>
+	
+ <style>
+body {
+            background-color: #825949;
+            }
+			
+</style>
+
+<div class="text-container">
+      <h3 style="padding-top: 60px; padding-left: 160px; font-size: 60px;">・┆ ✦ʚ SW33T LEAPS MENU ɞ✦ ┆・</h3>
+    </div>
+	<style>
+h3{
+font-size: 42px;
+color: #ffb8c9;
+text-shadow: 4px 3px 2px #695041;
+</style>
+
+	<img src="brand.png" alt="brand" style="width:1150px;height:780px;">
+	
+	<img src="menu.png" alt="menu" style="width:1150px;height:1400px;">
+	
+    <script>
+      // Get the checkbox element
+      var checkbox = document.getElementById('check');
+
+      // Listen for changes in the checkbox state
+      checkbox.addEventListener('change', function() {
+        // Toggle the 'shifted' class on the body when the checkbox is checked
+        if (checkbox.checked) {
+          document.body.classList.add('shifted');
+        } else {
+          document.body.classList.remove('shifted');
+        }
+      });
+    </script>
+  </body>
+</html>

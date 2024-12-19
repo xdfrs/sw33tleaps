@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to SW33T LEAPS !</title>
+    <link rel="stylesheet" href="brand.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      body {
+        background-color: #FFF8E8;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        transition: margin-left 0.5s ease; /* Smooth transition for shifting content */
+      }
+
+      body.shifted {
+        margin-left: 250px; /* Amount to push content to the right */
+      }
+
+      h1 {
+        margin: 0;
+		color: #80504e;
+        font-size: 70px;
+        text-align: left;
+        padding-left: 20%; /* Align with the left padding of the text container */
+        padding-top: 20px;
+        transition: padding-left 0.5s ease; /* Smooth transition for padding */
+      }
+
+      body.shifted h1, body.shifted .text-container {
+        padding-left: 25%; /* Shift content to the right when sidebar is open */
+      }
+
+      .text-container {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-top: 10px;
+        transition: padding-left 0.5s ease; /* Smooth transition for shifting */
+      }
+
+      .text-container h3 {
+        margin: 0;
+		color: #FFB6B9;
+        font-size: 36px;
+      }
+	  
+	  .text-container h4 {
+	   margin: 0;
+	   color: #80504e;
+       font-size: 20px;
+      }
+
+      .text-container p {
+        margin: 0; /* Remove default margin for the paragraph */
+        font-size: 18px; /* Adjust font size as needed */
+		color: #80504e;
+        text-align: left; /* Ensure text is left-aligned */
+        width: 100%; /* Ensure it takes full width */
+      }
+
+      .sidebar {
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        background: #FFDADA;
+        left: -250px; /* Initially hide the sidebar */
+        transition: left 0.5s ease; /* Smooth transition for showing/hiding the sidebar */
+      }
+
+      input[type="checkbox"]:checked ~ .sidebar {
+        left: 0; /* Show the sidebar when checked */
+      }
+
+      label {
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+
+      #check {
+        display: none;
+      }
+
+      .fas {
+        font-size: 24px;
+        color: #80504e;
+      }
+
+      /* Add space between the text and the link button */
+      .image-box {
+        margin-top: 20px; /* Add space above the link button */
+      }
+
+      .link-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #FF8A8A; /* Color of the link button */
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px; /* Space above the link button */
+        text-align: center;
+      }
+
+      .link-button:hover {
+        background-color: #FF5C5C; /* Darker color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+
+    <div class="sidebar">
+      <header>✦•┈๑⋯ ⋯๑┈•✦</header>
+      <ul>
+        <li><a href="menu.html"><i class="fas fa-qrcode"></i>Brand Menu</a></li>
+        <li><a href="info.html"><i class="fas fa-stream"></i>Brand Information</a></li>
+		<li><a href="owners.html"><i class="fas fa-stream"></i>Owners</a></li>
+      </ul>
+    </div>
+
+    <!-- Content Draft Title -->
+    <h1>Product Info. & Contacts</h1>
+
+    <!-- Align the text left with spaces on the sides -->
+    <div class="text-container">
+      <h3>Most Asked Questions .𓈒ׂ 𝜗𝜚</h3>
+    </div>
+    
+    <b> <div class="text-container">
+      <p>( ˶ˆᗜˆ˵ ) : "What's your best seller?"</p>
+    </div> </b>
+	
+	    <div class="text-container">
+      <p>- Our best selling pastry is our signature 'Chocolate Chip Cookies' While our best selling beverage is 'Strawberry Milk' </p>
+    </div>
+	
+	  <b>  <div class="text-container">
+      <p>(╥﹏╥) :"Are your prices affordable?"</p>
+    </div> </b>
+
+	    <div class="text-container">
+      <p>- Absolutely! Our prices are student and budget friendly.</p>
+    </div>
+	
+		  <b>  <div class="text-container">
+      <p>(ㅅ´ ˘ `) :"Do you accept online payment?"</p>
+    </div> </b>
+
+	    <div class="text-container">
+      <p>- Yuuuuupp! Our available mode of payment to pay for your delicious orders are by: Cash & Gcash.</p>
+    </div>
+
+    <!-- Align the text left with spaces on the sides -->
+    <div class="text-container" style="margin-top: 20px;"> <!-- Added margin-top here -->
+      <h3>Socials ⋆˚✿˖°</h3>
+    </div>
+    
+    <div class="text-container">
+      <p>Contact # : 000-000-000 | YouTube : Sw33tLeaps.official | Instagram : Sw33tLeaps.official</p>
+    </div>
+	
+	<div class="text-container">
+	<p> | Facebook Page : SweetLeaps.official</p>
+    </div>
+	
+	<!-- Align the text left with spaces on the sides -->
+    <div class="text-container" style="margin-top: 20px;"> <!-- Added margin-top here -->
+      <h3>Suggestions & Feedback Form ༉‧₊˚.ᐟ</h3>
+    </div>
+    
+    <div class="text-container">
+      <h4>We appreciate any honest feedback/suggestions for our Cafes improvement. ദ്ദി ˉ͈̀꒳ˉ͈́ )</h4>
+    </div>
+	
+	<center>
+	<div class="image-box">
+    <a href="https://example.com" class="link-button">Suggestions & Feedback Form</a>
+  </div>
+  </center>
+	
+    <script>
+      // Get the checkbox element
+      var checkbox = document.getElementById('check');
+
+      // Listen for changes in the checkbox state
+      checkbox.addEventListener('change', function() {
+        // Toggle the 'shifted' class on the body when the checkbox is checked
+        if (checkbox.checked) {
+          document.body.classList.add('shifted');
+        } else {
+          document.body.classList.remove('shifted');
+        }
+      });
+    </script>
+  </body>
+</html>
+
+cdnjs.cloudflare.com

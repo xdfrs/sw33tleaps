@@ -1,0 +1,162 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Change the font color of LifeLabs when sidebar is opened */
+#check:checked ~ .sidebar header {
+  color: #FFFBF2; /* "Lifelabs"  in the hover btn */
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #FFFBF2; /* Cream color */
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 23px;
+  color: #FF8A8A; /* Pinkish Red */
+  line-height: 70px;
+  text-align: center;
+  background: #80504e; /*  BG COLOR OF LIFELABS HOVER BTN */
+  user-select: none;
+}
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: #FF8A8A; /* Pinkish Red text */
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #FFF8E8; /* cream lines inbetween btn */
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  transition: .4s;
+}
+ul li:hover a {
+  padding-left: 50px;
+  background-color: #FFDADA; /* Soft pink hover */
+}
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+/* Button Controls */
+label #btn, label #cancel {
+  position: absolute;
+  background: #FFCBCB; /* Light Pink */
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: #80584e; /* brown */
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #fefaec; /* Pinkish Red */
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+/* Checkbox Control */
+#check {
+  display: none;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+#check:checked ~ section {
+  margin-left: 250px;
+}
+
+/* Section Background */
+section {
+  background: #FFF8E8; /* Light Cream background */
+  height: 100vh;
+  transition: all .5s;
+}
+
+/* Specific Button Colors */
+.sidebar ul li:nth-child(1) a { /* Brand Menu */
+  background-color: #FFDADA; /* Soft Pink */
+}
+.sidebar ul li:nth-child(2) a { /* Brand Information */
+  background-color: #FFDADA; /* Light Pink */
+}
+.sidebar ul li:nth-child(3) a { /* Owners */
+  background-color: #FFDADA; /* Light Cream Pink */
+}
+
+/* Hover Effect for Buttons */
+.sidebar ul li a:hover {
+  background-color: #FFB6B9; /* Pink hover color */
+  color: #FFF8E8; /* Light Cream text */
+}
+
+/* Change font color of the sidebar buttons */
+.sidebar ul a {
+  color: #80504e; /* Black color for sidebar links (buttons) */
+}
+
+/* Change font color for toggle buttons */
+#btn, #cancel {
+  color: #FF0000; /* Red color for the toggle icons */
+}
+
+
+--------
+/* Add space between the text and the link button */
+.image-box {
+  margin-top: 20px; /* Add space above the link button */
+}
+
+.link-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF8A8A; /* Color of the link button */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px; /* Space above the link button */
+  text-align: center;
+}
+
+.link-button:hover {
+  background-color: #FF5C5C; /* Darker color on hover */
+}
+
+img {
+  padding: 10px 70px 80px 100px;
+}
+
+
+
+fonts.googleapis.com
